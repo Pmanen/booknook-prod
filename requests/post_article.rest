@@ -1,0 +1,37 @@
+POST http://localhost:3003/api/articles
+Content-Type: application/json
+
+{
+  "title": "What are we all playing this weekend?",
+  "author": "Julian Benson",
+  "outlet": "Rock Paper Shotgun",
+  "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-369",
+  "length": 3,
+  "datePublished": "2026-02-14",
+  "genreTag": 90
+}
+
+###
+GET http://localhost:3003/api/articles
+
+###
+POST http://localhost:3003/api/articlelogs
+Content-Type: application/json
+
+{
+  "article": "69907988305d5d0761cfcc1f",
+  "notes": "good article!",
+  "favorite": false,
+  "readLength": 1
+}
+
+###
+GET http://localhost:3003/api/articlelogs
+
+###
+DELETE http://localhost:3003/api/articles/69af2566e9319f342bbc0bc4
+
+###
+DELETE http://localhost:3003/api/articles/69aca0ce4d83bef4d086a133
+
+
